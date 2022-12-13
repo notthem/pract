@@ -1,0 +1,520 @@
+$blclr: #5290EA
+$orngclr: #f28b64
+$grclr: #e2e2e2
+
+*
+    box-sizing: border-box
+
+
+.main-section
+    position: relative
+    min-height: 800px
+    background: $grclr
+    padding-top: 16px
+    overflow: hidden
+    &__logo
+        width: 134px
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 69px
+        align-items: center
+    &__content
+        position: relative
+        display: flex
+        flex-direction: row
+    &__first-elipse
+        position: absolute
+        top: 129px
+        right: 80px
+    &__second-elipse
+        position: absolute
+        right: -120px
+        top: 650px
+     
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        font-family: 'Montserrat', sans-serif
+        font-weight: bold
+        margin-right: 64px
+        font-size: 22px
+        &:last-child
+            margin-right: 0px
+        a
+            text-decoration: none
+            color: black
+
+.left-wrapper
+    position: relative
+    img
+        position: relative
+        z-index: 5
+    &__rectangle-blue
+        position: absolute
+        top: 150px
+        left: -50px
+        width: 565.95px
+        height: 220px
+        background: $blclr
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-64deg)
+        z-index: 2
+    &__rectangle-orange
+        position: absolute
+        top: 168px
+        left: -30px
+        width: 618.43px
+        height: 220px
+        background: $orngclr
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-50.81deg)
+        z-index: 4
+    &__rectangle-grey
+        position: absolute
+        top: 200px
+        left: 10px
+        width: 608.97px
+        height: 220px
+        background: $grclr
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-36.15deg)
+        z-index: 1
+
+.right-wrapper
+    position: absolute
+    width: 372px
+    top: 150px
+    right: 76px
+    &__icons-box
+        margin-bottom: 1px
+        padding-left: 10px
+    &__title
+        margin-bottom: 5px
+        z-index: 3
+    &__text
+        position: relative
+        font-size: 16px
+        margin-bottom: 20px
+        z-index: 3
+
+.icons
+    display: flex  // можно display: inline-flex
+    flex-direction: row
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border: 2px solid black
+        border-radius: 100px
+        margin-right: 17px
+        z-index: 3
+        &:last-child
+            margin-right: 0px
+
+.fa-brands
+    font-size: 24px
+
+.title
+    font-family: 'Montserrat', sans-serif
+    font-weight: 600
+    font-size: 72px
+    position: relative
+    &__hr
+        width: 65px
+        position: absolute
+        margin: 0
+        border: none
+        border-top: 1px solid black
+
+.buttons 
+        display: inline-flex
+        &__main-btn
+            margin-right: 32px
+            width: 200px
+            height: 60px
+            border-radius: 100px
+            background: $orngclr
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            border: none
+            font-size: 18px
+            color: white
+            font-family: 'Montserrat', sans-serif
+        &__icon-btn
+            display: inline-flex
+            align-items: center
+            img
+                margin-right: 12px
+        &__text
+            font-size: 16px
+       
+.elipse
+    width: 194px
+    height: 194px
+    background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%)
+    border-radius: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    &_big
+        width: 282px
+        height: 282px
+    &__subtract
+        width: 129.33px
+        height: 129.33px
+        background: $grclr
+        border-radius: 150px
+        &_big
+            width: 188px
+            height: 188px
+
+    
+.second-section
+    overflow: hidden
+    min-height: 700px
+    &__container
+        position: relative
+        padding-top: 32px
+    &__title
+        margin-bottom: 40px
+    &__cards-box
+        display: inline-flex
+        justify-content: center
+        margin-bottom: 25px
+    &__cards-item
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+    &__icons-box
+        display: flex
+        justify-content: space-evenly
+    &__first-elipse
+        position: absolute
+        top: 80px
+        right: -60px
+        z-index: -1
+    &__second-elipse
+        position: absolute
+        top: 364px
+        left: -60px
+        z-index: -1
+
+.elclr
+    background: white   
+        
+        
+
+.cards-item
+    position: relative
+    display: flex
+    align-items: flex-end
+    width: 360px
+    height: 360px
+    background: #e2e2e2
+    border-radius: 10px
+    &__img
+        height: 335px
+    &__text
+        position: absolute
+        top: 144px
+        right: -45px
+        transform: rotate(90deg)
+        width: 280px
+        font-size: 36px
+        text-align: center
+        font-weight: bold
+        font-family: 'Montserrat', sans-serif
+        
+        
+.ci_orange
+    background: $orngclr
+
+.ci_blue
+    background: $blclr      
+
+.icons-item
+    display: inline-flex     
+    align-items: center
+    &__img
+        width: 80px
+        height: 80px
+        margin-right: 20px
+    &__text
+        font-size: 18px
+        span
+            font-size: 48px
+            font-weight: bold
+
+
+.third-section
+    position: relative
+    min-height: 640px
+    background: $grclr 
+    z-index: 0
+    overflow: hidden
+    &__container 
+        position: relative
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding-left: 167px
+        padding-top: 46px
+    &__right-wrapper
+        max-width: 480px
+    &__right-title
+        margin-bottom: 20px 
+    &__left-title
+        z-index: 2     
+    &__text
+        font-size: 18px
+        margin-bottom: 30px
+    &__first-elipse
+        position: absolute
+        top: 140px
+        left: 110px
+        z-index: 1
+    &__figure
+        position: absolute
+        top: 249px
+        left: 15px
+        z-index: 1
+    &__second-elipse
+        position: absolute
+        right: -120px
+        top: -120px
+
+.footer
+    &__container
+        position: relative
+        min-height: 272px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__img 
+        position: absolute
+        left: -250px
+        bottom: 0
+    &__title
+        margin-bottom: 20px
+    
+.txt
+    font-family: 'Montserrat', sans-serif
+    font-weight: 400
+
+
+@media (max-width: 1199px)
+    .container
+        width: 960px
+    .main-section
+        min-height: 690px
+    .left-wrapper
+        img
+            width: 750px
+        &__rectangle-blue
+            width: 500px
+            height: 200px
+        &__rectangle-orange
+            width: 550px
+            height: 200px
+        &__rectangle-grey
+            width: 500px
+            height: 200px
+    .right-wrapper
+        right: 20px
+    .main-section__first-elipse
+        right: 10px
+    .main-section__second-elipse
+        top: 600px
+    
+    .second-section
+        min-height: 600px        
+    .cards-item
+        width: 300px
+        height: 300px
+        margin-right: 20px
+        &__img
+            height: 270px
+        &__text
+            top: 120px
+            font-size: 30px
+    .icons-item__img
+        margin-right: 10px
+    
+    .third-section__container
+        padding-left: 40px
+    .third-section__right-wrapper
+        min-width: 450px
+
+@media (max-width: 991px)
+    .container
+        width: 720px
+    .main-section
+        min-height: 520px
+        &__first-elipse
+            height: 128px
+            width: 128px
+            top: 161px
+            right: -1px
+
+    .left-wrapper
+        img
+            width: 540px
+        &__rectangle-blue
+            width: 380px
+            height: 140px
+        &__rectangle-orange
+            width: 420px
+            height: 140px
+        &__rectangle-grey
+            width: 380px
+            height: 140px
+    .right-wrapper
+        right: -40px
+        z-index: 5
+        &__icons-box
+            padding-left: 2px
+        &__title
+            font-size: 56px
+        &__button
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+        &__icon-btn
+            margin-right: 85px
+        &__text
+            font-size: 13px 
+        
+
+    .buttons__main-btn
+        margin-bottom: 10px
+        margin-right: 50px
+
+    .sub-ms
+        width: 85.11px
+        height: 85.11px
+    .sub-ts
+        width: 94.6px
+        height: 94.6px
+
+    .cards-item
+        width: 231px
+        height: 231px
+        &__img
+            height: 215px 
+            margin-right: 10px
+        &__text
+            top: 90px
+            right: -75px
+            font-size: 25px
+
+    .icons-item
+        &__img
+            height: 70px
+            width: 70px
+            margin-right: 5px
+        &__text
+            font-size: 14px
+            span
+                font-size: 40px
+        
+    .second-section
+        min-height: 480px
+        &__first-elipse
+            width: 0
+        &__second-elipse
+            width: 0
+
+    .third-section
+        min-height: 590px   
+        &__container
+            padding-left: 15px
+        &__left-title
+            font-size: 50px 
+        &__right-title
+            font-size: 60px
+        &__first-elipse
+            width: 142px
+            height: 142px
+            top: 235px
+            left: 40px
+        &__figure
+            height: 116px   
+            top: 294px
+        &__text
+            padding-left: 10px
+
+    .footer
+        &__title
+            font-size: 39px
+
+
+
+
+@media (max-width: 767px)
+    .container
+        width: 540px
+    .nav-menu
+        position: fixed
+        top: 0
+        right: -100%
+        height: 100vh
+        width: 40%
+        background: $blclr
+        z-index: 20
+        transition: 1s alss
+        &__list
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            height: 100%
+        &__list-item
+            margin-right: 0
+            font-style: 20px
+    .hamburger
+        width: 30px
+        position: fixed
+        top: 40px
+        right: 30px
+        height: 14px
+        z-index: 30
+        span
+            height: 2px
+            width: 100%
+            display: block
+            background: black
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0
+    .hamburger_active  
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        right: 0
+    .footer_img
+        
+@media (max-width: 575px)
+    .container
+        width: 100px
+   
+        
